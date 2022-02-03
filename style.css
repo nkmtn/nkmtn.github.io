@@ -1,0 +1,150 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #333;
+}
+
+span{
+	font-size: 18px;
+	color: #000;
+	transition: 0.3s;
+}
+
+img{
+	width: 100px;
+	border-radius: 35px;
+	margin: 10px 15px 0 0;
+}
+
+table {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(0, -50%)
+}
+
+table tr td:first-child {
+	padding-right: 10px;
+}
+
+table tr td span {
+	color: white;
+    font-size: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	transition: 0.3s;
+    font-size: 20px;
+}
+
+a:hover {
+	color: #1A6DBB;
+	transition: 0.3s;
+}
+
+::-moz-selection {
+	color: white; 
+	background: #1A6DBB;
+}
+
+::selection {
+	color: white; 
+	background: #1A6DBB;
+}
+
+.content {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.intro {
+	margin: 15% 0 5% 0;
+	text-align: center;
+}
+
+.intro span {
+	margin-bottom: 10px;
+	font-size: 25px;
+	line-height: 40px;
+}
+
+.intro span.highlight {
+	background-color: #333;
+	color: white;
+}
+
+.intro span.highlight-blue {
+	background-color: darkblue;
+	color: white;
+	transition: 0.3s;
+}
+
+.intro span.highlight-blue:hover {
+	background-color: blue;
+	color: white;
+	transition: 0.3s;
+}
+
+.businessCard {
+  background-color: #333;
+  border: 5px solid #333;
+  border-radius: 25px;
+  width: 55%;
+  height: 180px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.menu {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 20%;
+}
+
+.navigation {
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
+}
+
+.navigation a { 
+  margin: 0;
+  color: #333;
+  padding: 10px 20px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.navigation a:hover {
+	color: #1A6DBB;
+	transition: 0.3s;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-right: -6px;
+}
+
+@media (max-width: 360px) {
+	.intro {
+		margin: 50px 0 50px 0;
+	}
+	
+	.intro span {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	
+	img{
+		display: none;
+	}
+	
+	table {
+		float: none;
+	}
+}
